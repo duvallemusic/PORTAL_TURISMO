@@ -1,0 +1,37 @@
+.detail {
+  display: grid;
+  gap: 1rem;
+}
+
+.back {
+  justify-self: start;
+  color: #0f4c81;
+  font-weight: 600;
+}
+
+.detail h1 {
+  color: #0f4c81;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.detail p {
+  line-height: 1.65;
+  color: #334155;
+}
+
+.detail ul {
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+}

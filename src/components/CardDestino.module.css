@@ -1,0 +1,43 @@
+.card {
+  background: #ffffff;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(15, 76, 129, 0.12);
+  display: grid;
+  grid-template-rows: 220px auto;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+  padding: 1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.content h2 {
+  font-size: 1.2rem;
+}
+
+.content p {
+  color: #4b5563;
+}
+
+.link {
+  justify-self: start;
+  background: #0f4c81;
+  color: #fff;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+}
+
+.link:hover {
+  background: #0b3b63;
+}

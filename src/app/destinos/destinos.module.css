@@ -1,0 +1,19 @@
+.header {
+  margin-bottom: 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.header h1 {
+  color: #0f4c81;
+}
+
+.header p {
+  color: #475569;
+}
+
+.grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
