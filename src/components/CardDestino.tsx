@@ -1,10 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Destino } from "@/data/destinos";
 import styles from "./CardDestino.module.css";
 
+export type CardDestinoData = {
+  id: string;
+  nome: string;
+  imagem: string;
+  descricao: string;
+};
+
 type CardDestinoProps = {
-  destino: Destino;
+  destino: CardDestinoData;
 };
 
 export function CardDestino({ destino }: CardDestinoProps) {
@@ -21,7 +27,7 @@ export function CardDestino({ destino }: CardDestinoProps) {
       </div>
       <div className={styles.content}>
         <h2>{destino.nome}</h2>
-        <p>{destino.localizacao}</p>
+        <p>{destino.descricao}</p>
         <Link href={`/destinos/${destino.id}`} className={styles.link}>
           Ver detalhes
         </Link>
